@@ -1,4 +1,4 @@
-# Work-Queue
+# Work Queue
 
 The work queue performs a number of tasks. These tasks are provided in order of priority. They are assumed to be independent and completable without a strict order. There are three tasks are performed (a, b, c). The work queue is made up of producers and consumers along with a main thread that manages them. 
 
