@@ -14,22 +14,16 @@ WorkQueue will take two arguments that tells it the number of threads to use for
 
 All consumers should eagerly complete tasks as they arrive. All producers should eagerly put maximum work in queue when it is not full, sleeping only when instructed by a delay. You should strive to write the program with the minimum amount of time spent excluding other threads from shared resources. Here is a simple example of WorkQueue: 
 
-<hr>
+```
 foo@bar$ java WorkQueue 1 3
-
 Thread 1 Starting Job A (#1)
-
 Thread 1 Ending Job A (#1)
-
 Thread 3 Starting Job B (#2)
-
 Thread 2 Starting Job C (#3)
-
 Thread 3 Ending Job B (#2)
-
 Thread 2 Ending Job C (#3)
-
 3 Jobs Done
+```
 
 Implement proper multi-threaded program. All consumers and producers should be active at all times that there is some work to do. 
 
